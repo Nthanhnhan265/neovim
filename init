@@ -1,0 +1,30 @@
+
+
+""""""""""""""""""""""""""""""""""""""""""
+" INSTALL PLUGINS 
+""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/AppData/Local/nvim/plugged')
+"Theme"
+Plug 'joshdick/onedark.vim'
+
+"file browser" 
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-hightlight'
+call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""
+"CONFIGARATION THEME"
+""""""""""""""""""""""""""""""""""""""""""
+syntax on 
+colorscheme onedark
+
+set number
+
+
+""""""""""""""""""""""""""""""""""""""""""
+"SETTINGS : 
+"liên kết thêm 1 vài tệp cấu hình khác
+""""""""""""""""""""""""""""""""""""""""""
+
