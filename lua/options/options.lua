@@ -25,7 +25,7 @@ vim.o.writebackup = false
 --updatetime: Thời gian chờ để kích hoạt các sự kiện (như CursorHold).
 --timeoutlen: Thời gian chờ cho các tổ hợp phím.
 vim.o.updatetime = 300
-vim.o.timeoutlen = 150
+-- vim.o.timeoutlen = 150
 ---
 --hlsearch: Tắt tô sáng kết quả tìm kiếm.
 --ignorecase: Không phân biệt chữ hoa/thường khi tìm kiếm.
