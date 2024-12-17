@@ -10,4 +10,10 @@ return require('packer').startup(function(use)
   -- Simple plugins can be specified as strings
   use 'rstacruz/vim-closer'
 
+  use 'nvim-tree/nvim-web-devicons'
+
+  --theme: catppucin
+use { "catppuccin/nvim", as = "catppuccin" }
+
+
 end)
