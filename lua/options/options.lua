@@ -25,7 +25,7 @@ vim.o.writebackup = false
 --updatetime: Thời gian chờ để kích hoạt các sự kiện (như CursorHold).
 --timeoutlen: Thời gian chờ cho các tổ hợp phím.
 vim.o.updatetime = 300
--- vim.o.timeoutlen = 150
+vim.o.timeoutlen = 500
 ---
 --hlsearch: Tắt tô sáng kết quả tìm kiếm.
 --ignorecase: Không phân biệt chữ hoa/thường khi tìm kiếm.
@@ -38,7 +38,7 @@ vim.o.scrolloff = 3
 vim.o.sidescrolloff = 5
 ---
 vim.o.mouse = "a" --Bật hỗ trợ chuột cho tất cả chế độ.
-vim.wo.wrap = true --Không ngắt dòng khi dòng quá dài.
+vim.wo.wrap = false --Không ngắt dòng khi dòng quá dài.
 vim.o.cursorline = true --ô sáng dòng mà con trỏ đang đứng.
 vim.wo.signcolumn = "yes" --Luôn hiển thị cột dấu hiệu (như breakpoint, git change).
 
@@ -48,13 +48,24 @@ vim.wo.signcolumn = "yes" --Luôn hiển thị cột dấu hiệu (như breakpoi
 -- shiftwidth: Số spaces cho mỗi lần thụt dòng (indent).
 -- autoindent: Tự động thụt dòng khi xuống dòng.
 -- expandtab: Chuyển phím Tab thành spaces.
--- vim.o.tabstop = 2
--- vim.bo.tabstop = 2
--- vim.o.softtabstop = 2
--- vim.o.shiftwidth = 2
--- vim.bo.shiftwidth = 2
--- vim.o.autoindent = true
--- vim.bo.autoindent = true
--- vim.o.expandtab = true
--- vim.bo.expandtab = true
+vim.o.tabstop = 2
+vim.bo.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
+vim.bo.shiftwidth = 2
+vim.o.autoindent = true
+vim.bo.autoindent = true
+vim.o.expandtab = true
+vim.bo.expandtab = true
 ---
+
+
+  -- tắt netrw 
+  vim.g.loaded_netrw = 1
+  vim.g.loaded_netrwPlugin = 1
+
+-- vim.g.completeopt = "menu, menuone, noselect, noinsert"
+
+
+-- Friendly snippets 
+vim.g.vsnip_snippet_dir = vim.fn.stdpath("data") .. "/site/pack/packer/start/friendly-snippets/snippets"
